@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link type="text/css" rel="stylesheet" href="calcu.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+<script>
+
+
+function one()
+{
+	document.getElementById('display').value+='1';
+}
+function two()
+{
+	document.getElementById('display').value+='2';
+}
+function three()
+{
+	document.getElementById('display').value+='3';
+}
+
+function four()
+{
+	document.getElementById('display').value+='4';
+}
+function five()
+{
+	document.getElementById('display').value+='5';
+}
+function six()
+{
+	document.getElementById('display').value+='6';
+}
+function seven()
+{
+	document.getElementById('display').value+='7';
+}
+function eight()
+{
+	document.getElementById('display').value+='8';
+}
+function nine()
+{
+	document.getElementById('display').value+='9';
+}
+function zero()
+{
+	document.getElementById('display').value+='0';
+}
+
+function dot()
+{
+	document.getElementById('display').value+=".";	
+}
+function multiply()
+{
+	document.getElementById('display').value+="*";	
+}
+function dot()
+{
+	document.getElementById('display').value+=".";	
+}
+function add()
+{
+	document.getElementById('display').value+="+";	
+}
+function divide()
+{
+	document.getElementById('display').value+="/";	
+}
+function del()
+{
+	document.getElementById('display').value="";	
+}
+function equalsto()
+{
+	document.getElementById('display').value=eval(document.getElementById('display').value);	
+}		
+</script>
+
+</head>
+
+<body>
+<fieldset>
+  <legend>calculator 1.2</legend>
+  <table width="133" border="1">
+    <tr>
+      <td colspan="4" ><label for="textfield"></label>
+      <input type="text" name="textfield" id="display" /></td>
+    </tr>
+    <tr>
+      <td width="23"><input type="submit" name="button" id="button" value="1" onclick="one()" /></td>
+      <td width="23"><input type="submit" name="button2" id="button2" value="2" onclick="two()"/></td>
+      <td width="33"><input type="submit" name="button3" id="button3" value="3" onclick="three()"/></td>
+      <td width="26"><input type="submit" name="button4" id="button4" value="+" onclick="add()"/></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="button5" id="button5" value="4" onclick="four()"/></td>
+      <td><input type="submit" name="button8" id="button8" value="5" onclick="five()"/></td>
+      <td><input type="submit" name="button10" id="button10" value="6" onclick="six()"/></td>
+      <td><input type="submit" name="button11" id="button11" value="/" onclick="divide()"/></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="button6" id="button6" value="7" onclick="seven()"/></td>
+      <td><input type="submit" name="button9" id="button9" value="8" onclick="eight()"/></td>
+      <td><input type="submit" name="button13" id="button13" value="9" onclick="nine()"/></td>
+      <td><input type="submit" name="button12" id="button12" value="*" onclick="multiply()"/></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="button7" id="button7" value="." onclick="dot()" /></td>
+      <td><input type="submit" name="button15" id="button15" value="0" onclick="zero()"/></td>
+      <td><input type="submit" name="button14" id="button14" value="del" onclick="del()"/></td>
+      <td><input type="submit" name="button16" id="button16" value="=" onclick="equalsto()"/></td>
+    </tr>
+  </table>
+</fieldset>
+</body>
+</html>
