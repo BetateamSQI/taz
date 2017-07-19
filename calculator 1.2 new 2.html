@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>calculator</title>
+<script>
+	function display(taz)
+{
+	document.getElementById("textfield").value+=taz;	
+}
+function del(taz)
+{
+	document.getElementById("textfield").value=taz;	
+}
+
+function equals()
+{
+	del(eval(document.getElementById("textfield").value));	
+}
+</script>
+</head>
+
+<body>
+<table width="200" border="1">
+  <tr>
+    <td colspan="4"><input type="text" name="textfield" id="textfield" /></td>
+  </tr>
+  <tr>
+    <td><input type="submit" name="button" id="button" value="1" onClick='display("1")' /></td>
+    <td><input type="submit" name="button2" id="button2" value="2" onClick='display("2")'/></td>
+    <td><input type="submit" name="button3" id="button3" value="3" onClick='display("3")'/></td>
+    <td><input type="submit" name="button4" id="button4" value="+" onClick='display("+")'/></td>
+  </tr>
+  <tr>
+    <td><input type="submit" name="button5" id="button5" value="4" onClick='display("4")'/></td>
+    <td><input type="submit" name="button8" id="button8" value="5" onClick='display("5")'/></td>
+    <td><input type="submit" name="button11" id="button11" value="6" onClick='display("6")'/></td>
+    <td><input type="submit" name="button14" id="button14" value="/" onClick='display("/")'/></td>
+  </tr>
+  <tr>
+    <td><input type="submit" name="button6" id="button6" value="7" onClick='display("7")'/></td>
+    <td><input type="submit" name="button9" id="button9" value="8" onClick='display("8")'/></td>
+    <td><input type="submit" name="button12" id="button12" value="9" onClick='display("9")'/></td>
+    <td><input type="submit" name="button15" id="button15" value="*" onClick='display("*")'/></td>
+  </tr>
+  <tr>
+    <td><input type="submit" name="button7" id="button7" value="." onClick='display(".")'/></td>
+    <td><input type="submit" name="button10" id="button10" value="0" onClick='display("0")'/></td>
+    <td><input type="submit" name="button13" id="button13" value="del" onClick='del("")'/></td>
+    <td><input type="submit" name="button16" id="button16" value="=" onClick="equals()" /></td>
+  </tr>
+</table>
+</body>
+</html>
